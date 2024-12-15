@@ -1,0 +1,7 @@
+---
+- name: Ping EC2 Instances for Health Check
+  hosts: all
+  gather_facts: no
+  tasks:
+    - name: Ping the instances
+      ping:
